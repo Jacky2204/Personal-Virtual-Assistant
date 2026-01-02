@@ -1,6 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
+<<<<<<< HEAD
 import AllRouter from "./router/allrouters.js";
+=======
+import AllRouter from "./Router/allRouters.js";
+>>>>>>> a7098b3 (second commit)
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import connectDB from "./config/db.js";
@@ -27,7 +31,15 @@ app.use(cookieParser());
 
 app.use("/api", AllRouter);
 
+<<<<<<< HEAD
 
+=======
+app.get("/",async(req,res)=>{
+  let prompt=req.query.prompt
+  let data=await geminiResponse(prompt)
+  res.json(data)
+})
+>>>>>>> a7098b3 (second commit)
 
 connectDB();
 const port = process.env.PORT || 2000;

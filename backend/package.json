@@ -4,8 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "dev": "nodemon index.js",
     "start": "node index.js"
+=======
+    "dev": "nodemon index.js"
+>>>>>>> a7098b3 (second commit)
   },
   "keywords": [],
   "author": "Captain Jacks Sparrow",
@@ -26,4 +30,8 @@
     "multer": "^2.0.2",
     "nodemon": "^3.1.11"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a7098b3 (second commit)

@@ -69,15 +69,8 @@ export const askToAssistant = async (req, res) => {
     const userName = user.name;
     const assistantName = user.assistantName;
     user.history.push(command);
-<<<<<<< HEAD
-<<<<<<< HEAD
     user.save();
-=======
-    user.save()
->>>>>>> a7098b3 (second commit)
-=======
-    user.save();
->>>>>>> d4976b3 (rename files)
+
     const result = await geminiResponse(command, assistantName, userName);
 
     const jsonMatch = result.match(/{[\s\S]*}/);

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { userDataContext } from "../Context/userContext";
+import { userDataContext } from "../Context/UserContext.jsx";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CgMenuRight } from "react-icons/cg";

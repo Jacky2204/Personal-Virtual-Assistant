@@ -4,7 +4,7 @@ import SignUp from "./Pages/SignUp";
 import SignIn from "./Pages/SignIn";
 import Customize from "./Pages/Customize";
 import Home from "./Pages/Home";
-import { userDataContext } from "./Context/userContext";
+import { userDataContext } from "./Context/UserContext";
 import Customize2 from "./Pages/Customize2";
 
 function App() {

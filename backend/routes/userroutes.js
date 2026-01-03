@@ -3,8 +3,8 @@ import {
   askToAssistant,
   getCurrentUser,
   updateAssistant,
-} from "../controllers/usercontroller.js";
-import isAuth from "../middlewares/isauth.js";
+} from "../controllers/userController.js";
+import isAuth from "../middlewares/isAuth.js";
 import upload from "../middlewares/multer.js";
 
 const userRoutes = express.Router();

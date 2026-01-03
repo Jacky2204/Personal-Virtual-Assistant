@@ -9,7 +9,7 @@ import image5 from "./../assets/image5.jpg";
 import image6 from "./../assets/image6.jpg";
 import image7 from "./../assets/image7.jpeg";
 import { RiImageAddLine } from "react-icons/ri";
-import { userDataContext } from "../Context/userContext";
+import { userDataContext } from "../Context/UserContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { MdKeyboardBackspace } from "react-icons/md";
 

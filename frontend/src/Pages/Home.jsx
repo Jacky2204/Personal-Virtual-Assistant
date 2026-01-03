@@ -9,8 +9,7 @@ import userImg from "../assets/user.gif"
 
 
 function Home() {
-  const { serverUrl, userData, setUserData, getGeminiResponse } =
-    useContext(userDataContext);
+  const { serverUrl, userData, setUserData, getGeminiResponse } = useContext(userDataContext);
   const navigate = useNavigate();
   const [listeining, setListeining] = useState(false);
   const [userText, setUserText] = useState("");
@@ -377,15 +376,8 @@ function Home() {
         <h1 className="text-white font-semibold text-2xl">History</h1>
 
         <div className="w-full h-[400px] flex flex-col gap-[2px] overflow-y-auto">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
           {userData?.history?.reverse().map((his, index) => (
-=======
-          {userData?.history?.map((his, index) => (
->>>>>>> ce2c395 (first commit)
-=======
-          {userData?.history?.reverse().map((his, index) => (
->>>>>>> dabcb7c (add voice gifs)
             <ul key={index}>
               <li className="text-white truncate">{his}</li>
             </ul>

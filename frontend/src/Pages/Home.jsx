@@ -411,18 +411,9 @@ function Home() {
         I'm {userData?.assistantName}
       </h1>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       {!aiText && <img src={userImg} className="w-[200px]" />}
       {aiText && <img src={aiImg} className="w-[200px]" />}
-=======
-      {!aiText && <img src={userImg} className="w-[20px]" />}
-      {aiText && <img src={aiImg} className="w-[20px]" />}
->>>>>>> ce2c395 (first commit)
-=======
-      {!aiText && <img src={userImg} className="w-[200px]" />}
-      {aiText && <img src={aiImg} className="w-[200px]" />}
->>>>>>> dabcb7c (add voice gifs)
+
 
       <h3 className="text-white text-[16px] text-wrap text-center px-4">
         {userText ? userText : aiText ? aiText : null}

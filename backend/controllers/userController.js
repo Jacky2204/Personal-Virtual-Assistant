@@ -1,4 +1,4 @@
-import User from "./../models/userModel.js";
+import User from "../models/usermodel.js";
 import uploadOnCloudinary from "../config/cloudinary.js";
 import geminiResponse from "../gemini.js";
 import { json, response } from "express";
@@ -70,10 +70,14 @@ export const askToAssistant = async (req, res) => {
     const assistantName = user.assistantName;
     user.history.push(command);
 <<<<<<< HEAD
+<<<<<<< HEAD
     user.save();
 =======
     user.save()
 >>>>>>> a7098b3 (second commit)
+=======
+    user.save();
+>>>>>>> d4976b3 (rename files)
     const result = await geminiResponse(command, assistantName, userName);
 
     const jsonMatch = result.match(/{[\s\S]*}/);

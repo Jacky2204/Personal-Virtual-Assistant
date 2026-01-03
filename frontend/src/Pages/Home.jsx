@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross1 } from "react-icons/rx";
-import aiImg from "../assets/image3.jpg"
-import userImg from "../assets/image2.jpg"
+import aiImg from "../assets/ai.gif"
+import userImg from "../assets/user.gif"
 
 function Home() {
   const { serverUrl, userData, setUserData, getGeminiResponse } =
@@ -376,7 +376,7 @@ function Home() {
         <h1 className="text-white font-semibold text-2xl">History</h1>
 
         <div className="w-full h-[400px] flex flex-col gap-[2px] overflow-y-auto">
-          {userData?.history?.map((his, index) => (
+          {userData?.history?.reverse().map((his, index) => (
             <ul key={index}>
               <li className="text-white truncate">{his}</li>
             </ul>
@@ -410,8 +410,8 @@ function Home() {
         I'm {userData?.assistantName}
       </h1>
 
-      {!aiText && <img src={userImg} className="w-[20px]" />}
-      {aiText && <img src={aiImg} className="w-[20px]" />}
+      {!aiText && <img src={userImg} className="w-[200px]" />}
+      {aiText && <img src={aiImg} className="w-[200px]" />}
 
       <h3 className="text-white text-[16px] text-wrap text-center px-4">
         {userText ? userText : aiText ? aiText : null}

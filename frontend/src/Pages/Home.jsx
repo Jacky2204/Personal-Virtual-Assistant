@@ -4,13 +4,9 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross1 } from "react-icons/rx";
-<<<<<<< HEAD
 import aiImg from "../assets/ai.gif"
 import userImg from "../assets/user.gif"
-=======
-import aiImg from "../assets/image3.jpg"
-import userImg from "../assets/image2.jpg"
->>>>>>> ce2c395 (first commit)
+
 
 function Home() {
   const { serverUrl, userData, setUserData, getGeminiResponse } =
@@ -382,10 +378,14 @@ function Home() {
 
         <div className="w-full h-[400px] flex flex-col gap-[2px] overflow-y-auto">
 <<<<<<< HEAD
+<<<<<<< HEAD
           {userData?.history?.reverse().map((his, index) => (
 =======
           {userData?.history?.map((his, index) => (
 >>>>>>> ce2c395 (first commit)
+=======
+          {userData?.history?.reverse().map((his, index) => (
+>>>>>>> dabcb7c (add voice gifs)
             <ul key={index}>
               <li className="text-white truncate">{his}</li>
             </ul>
@@ -420,12 +420,17 @@ function Home() {
       </h1>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       {!aiText && <img src={userImg} className="w-[200px]" />}
       {aiText && <img src={aiImg} className="w-[200px]" />}
 =======
       {!aiText && <img src={userImg} className="w-[20px]" />}
       {aiText && <img src={aiImg} className="w-[20px]" />}
 >>>>>>> ce2c395 (first commit)
+=======
+      {!aiText && <img src={userImg} className="w-[200px]" />}
+      {aiText && <img src={aiImg} className="w-[200px]" />}
+>>>>>>> dabcb7c (add voice gifs)
 
       <h3 className="text-white text-[16px] text-wrap text-center px-4">
         {userText ? userText : aiText ? aiText : null}

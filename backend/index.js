@@ -1,10 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-<<<<<<< HEAD
-import AllRouter from "./router/allrouters.js";
-=======
-import AllRouter from "./Router/allRouters.js";
->>>>>>> a7098b3 (second commit)
+import AllRouter from "./Router/allRouters.js"
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import connectDB from "./config/db.js";

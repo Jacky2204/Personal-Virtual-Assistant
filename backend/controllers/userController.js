@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import User from "../models/userModel.js";
-=======
 import User from "./../models/userModel.js";
->>>>>>> a7098b3 (second commit)
 import uploadOnCloudinary from "../config/cloudinary.js";
 import geminiResponse from "../gemini.js";
 import { json, response } from "express";

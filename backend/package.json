@@ -4,12 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
     "dev": "nodemon index.js",
     "start": "node index.js"
-=======
-    "dev": "nodemon index.js"
->>>>>>> a7098b3 (second commit)
   },
   "keywords": [],
   "author": "Captain Jacks Sparrow",
@@ -31,7 +27,11 @@
     "nodemon": "^3.1.11"
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> a7098b3 (second commit)
+=======
+}
+>>>>>>> dabcb7c (add voice gifs)

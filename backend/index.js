@@ -27,15 +27,11 @@ app.use(cookieParser());
 
 app.use("/api", AllRouter);
 
-<<<<<<< HEAD
-
-=======
 app.get("/",async(req,res)=>{
   let prompt=req.query.prompt
   let data=await geminiResponse(prompt)
   res.json(data)
 })
->>>>>>> a7098b3 (second commit)
 
 connectDB();
 const port = process.env.PORT || 2000;

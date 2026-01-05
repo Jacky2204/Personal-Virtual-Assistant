@@ -1,6 +1,6 @@
-import User from "../models/usermodel.js";
-import uploadOnCloudinary from "../config/cloudinary.js";
-import geminiResponse from "../gemini.js";
+import User from "../models/userModel.js";
+import uploadOnCloudinary from "./../config/cloudinary.js";
+import geminiResponse from "./../gemini.js";
 import { json, response } from "express";
 import moment from "moment/moment.js";
 

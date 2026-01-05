@@ -308,7 +308,7 @@ function Home() {
 
     recognition.onresult = async (e) => {
       const transcript = e.results[e.results.length - 1][0].transcript.trim();
-      // console.log("heard :", transcript);
+      console.log("heard :", transcript);
 
       if (
         transcript.toLowerCase().includes(userData.assistantName.toLowerCase())

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { userDataContext } from "./userDataContext";
+import { UserDataContext } from "./userDataContext";
 
 function UserContext({ children }) {
   const serverUrl = "https://personal-virtual-assistant-backend.onrender.com";
@@ -61,9 +61,9 @@ function UserContext({ children }) {
 
   return (
     <div>
-      <userDataContext.Provider value={value}>
+      <UserDataContext.Provider value={value}>
         {children}
-      </userDataContext.Provider>
+      </UserDataContext.Provider>
     </div>
   );
 }

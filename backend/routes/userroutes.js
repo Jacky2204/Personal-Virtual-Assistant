@@ -3,7 +3,7 @@ import {
   askToAssistant,
   getCurrentUser,
   updateAssistant,
-} from "../controllers/usercontroller.js";
+} from "./../controllers/userController.js";
 import isAuth from "../middlewares/isauth.js";
 import upload from "../middlewares/multer.js";
 

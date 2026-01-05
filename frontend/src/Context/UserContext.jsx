@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { UserDataContext } from "./UserContext.jsx";
+import { UserDataContext } from "./UserDataContext.jsx";
 
 function UserContext({ children }) {
   const serverUrl = "https://personal-virtual-assistant-backend.onrender.com";

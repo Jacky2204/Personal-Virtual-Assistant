@@ -4,8 +4,8 @@ import {
   getCurrentUser,
   updateAssistant,
 } from "./../controllers/userController.js";
-import isAuth from "../middlewares/isauth.js";
-import upload from "../middlewares/multer.js";
+import isAuth from "./../middlewares/isauth.js";
+import upload from "./../middlewares/multer.js";
 
 const userRoutes = express.Router();
 

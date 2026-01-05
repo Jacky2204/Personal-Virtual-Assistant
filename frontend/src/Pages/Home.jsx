@@ -328,7 +328,7 @@ function Home() {
     };
 
 
-    const greeting = new SpeechSynthesisUtterance(`Hello ${userData.name}, What can I help you?`)
+    const greeting = new SpeechSynthesisUtterance(`Hello ${userData.name}, I was developed by Captain Jacks Sparrow. What can I help you?`)
     greeting.lang = 'hi-IN'
     window.speechSynthesis.speak(greeting)
 

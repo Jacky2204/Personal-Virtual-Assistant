@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { userDataContext } from "../Context/UserContext.jsx";
+import { UserDataContext } from "../Context/UserContext.jsx";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CgMenuRight } from "react-icons/cg";
@@ -9,7 +9,7 @@ import userImg from "../assets/user.gif"
 
 
 function Home() {
-  const { serverUrl, userData, setUserData, getGeminiResponse } = useContext(userDataContext);
+  const { serverUrl, userData, setUserData, getGeminiResponse } = useContext(UserDataContext);
   const navigate = useNavigate();
   const [listeining, setListeining] = useState(false);
   const [userText, setUserText] = useState("");
